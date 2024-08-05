@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #000000;
+}
+
+h3 {
+    color: #2c2c2c;
+}
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555555;
+}
+
+#bill-section {
+    margin-top: 20px;
+}
+
+#item-selection {
+    margin-bottom: 20px;
+}
+
+#items-list {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#items-list div {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+#items-list .item-name {
+    font-weight: bold;
+}
+
+#items-list .item-price {
+    color: #666666;
+}

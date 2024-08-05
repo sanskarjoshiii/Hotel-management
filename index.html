@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Billing System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>HOTEL PRIYANKA</h1>
+        <button id="new-bill-btn">New Bill</button>
+        <div id="bill-section" style="display:none;">
+            <div id="customer-info">
+                <label for="customer-name">Customer Name:</label>
+                <input type="text" id="customer-name" placeholder="Enter customer name" required>
+                <button id="start-bill-btn">Start Bill</button>
+            </div>
+            <div id="item-selection" style="display:none;">
+                <h2>Non-Veg Items</h2>
+                <select id="non-veg-items">
+                    <option value="MUTTON SUKKA">MUTTON SUKKA - $110</option>
+                    <option value="MUTTON FRY">MUTTON FRY - $120</option>
+                    <option value="MUTTON MASALA">MUTTON MASALA - $110</option>
+                    <option value="MUTTON BUTTER">MUTTON BUTTER - $150</option>
+                    <option value="MUTTON MOGHLAI">MUTTON MOGHLAI - $140</option>
+                    <option value="MUTTON KOLHAPURI">MUTTON KOLHAPURI - $140</option>
+                    <option value="MUTTON KADAI">MUTTON KADAI - $180</option>
+                    <option value="MUTTON HANDI">MUTTON HANDI - $180</option>
+                    <option value="MUTTON LIVER SUKKHA">MUTTON LIVER SUKKHA - $110</option>
+                    <option value="MUTTON LIVER MASALA">MUTTON LIVER MASALA - $110</option>
+                    <option value="MUTTON LIVER FRY">MUTTON LIVER FRY - $120</option>
+                    <option value="VAJARI MASALA">VAJARI MASALA - $90</option>
+                    <option value="VAJARI FRY">VAJARI FRY - $100</option>
+                </select>
+                <button type="button" id="add-non-veg-item-btn">Add Non-Veg Item</button>
+                
+                <h2>Veg Items</h2>
+                <select id="veg-items">
+                    <option value="AALU MUTTER">AALU MUTTER - $80</option>
+                    <option value="AALU MUTTER FRY">AALU MUTTER FRY - $85</option>
+                    <option value="CHANNA MAS. FRY">CHANNA MAS. FRY - $85</option>
+                    <option value="DAL FRY">DAL FRY - $70</option>
+                    <option value="PANEER BHURJI">PANEER BHURJI - $130</option>
+                    <option value="PANEER MASALA">PANEER MASALA - $130</option>
+                    <option value="PANEER MAKHANWALA">PANEER MAKHANWALA - $140</option>
+                    <option value="VEG. KURMA">VEG. KURMA - $90</option>
+                    <option value="VEG. KOLHAPURI">VEG. KOLHAPURI - $90</option>
+                    <option value="MIX VEG">MIX VEG - $90</option>
+                    <option value="DAL TADKA">DAL TADKA - $90</option>
+                    <option value="BAIGAN MASALA">BAIGAN MASALA - $90</option>
+                    <option value="BHENDI MASALA">BHENDI MASALA - $90</option>
+                    <option value="AALU PALAK">AALU PALAK - $100</option>
+                    <option value="PANEER PALAK">PANEER PALAK - $130</option>
+                    <option value="SIMLA MASALA">SIMLA MASALA - $100</option>
+                    <option value="VEG. KADAI">VEG. KADAI - $200</option>
+                    <option value="CHAPATI">CHAPATI - $10</option>
+                    <option value="ROTI">ROTI - $17</option>
+                    <option value="BUTTER ROTI">BUTTER ROTI - $25</option>
+                    <option value="PARATHA">PARATHA - $25</option>
+                    <option value="BUTTER PARATHA">BUTTER PARATHA - $30</option>
+                    <option value="NAAN">NAAN - $35</option>
+                    <option value="BUTTER NAAN">BUTTER NAAN - $35</option>
+                    <option value="GARLIK NAAN">GARLIK NAAN - $60</option>
+                    <option value="BUTTER GARLIK NAAN">BUTTER GARLIK NAAN - $65</option>
+                    <option value="BHAKRI">BHAKRI - $20</option>
+                </select>
+                <button type="button" id="add-veg-item-btn">Add Veg Item</button>
+            </div>
+            <div id="items-list"></div>
+            <h3>Total: $<span id="total">0</span></h3>
+            <button id="finalize-bill-btn" style="display:none;">Finalize Bill</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+</body>
+</html>
